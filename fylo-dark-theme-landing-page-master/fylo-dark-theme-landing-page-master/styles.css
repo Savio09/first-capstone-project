@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.mg-wrap {
+    background-color: hsl(218, 28%, 13%);
+}
+
+.mg-wrap-1 {
+    height: 160vh;
+    background: url(./images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(217, 28%, 15%);
+    background-position: left 105%;
+    object-fit: cover;
+}
+
+.intro-div {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.header .logo {
+    width: 70%;
+}
+
+.navigation {
+    width: 30%;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.navigation a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;    
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+}
+.hero-section img {
+    width: 50%;
+}
+.intro-text {
+    max-width: 600px;
+    color: white;
+    text-align: center;
+}
+
+.intro-text .title {
+    line-height: 2.5rem;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.intro-text .subtitle {
+    max-width: 470px;
+    margin: 0 auto;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta {
+    color: white;
+    border: 0;
+    background: linear-gradient(to right, hsl(176, 68%, 64%),hsl(198, 60%, 50%));
+    padding: 10px 70px;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.grid-section {
+    width: 70%;
+    height: 90vh;
+    margin: 0 auto;
+}
+
+.grid-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.grid-item {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.grid-item .intro-icon {
+    width: 15%;
+}
+
+.description-header {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.description-note {
+    max-width: 350px;
+    color: white;
+    font-size: 15px;
+}
+
+.flex-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+}
+
+.flex-left {
+    margin-right: 50px;
+}
+
+.flex-right h2 {
+    max-width: 250px;
+    color: white;
+    font-size: 1.9rem;
+}
+
+.flex-right p {
+    color: white;
+    max-width: 450px;
+    margin-top: 20px;
+}
