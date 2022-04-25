@@ -329,6 +329,68 @@ footer {
 }
 
 
+@media screen and (max-width: 425px) {
+
+    section.grid {
+        height: max-content;
+        margin: 40px 0;
+    }    
+
+    section.grid .grid-items {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    section.productive {
+        height: max-content;
+    }
+
+    .flex-container {
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+    }
+    .flex-left {
+        margin-bottom: 100px;
+    }
+
+    .flex-right h2 {
+        width: 100%;
+        color: white;
+        font-size: 1.9rem;
+        font-family: Raleway, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .flex-right p {
+        color: white;
+        width: 100%;
+        margin-top: 20px;
+        font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .comment-section {
+        width: 80%;
+        height: 150vh;
+        padding-bottom: 30px;
+    }
+
+    .comment-section .grid-items {
+        grid-template-columns: 1fr;
+    }
+
+    .card p {
+        max-width: 100%;
+    }
+    .overlay {
+        bottom: -15%;
+    }
+
+}
+
+
 @media screen and (max-width: 768px) {
     .flex-left {
         width: 60%;
