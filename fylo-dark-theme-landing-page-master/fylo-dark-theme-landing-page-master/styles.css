@@ -402,6 +402,20 @@ footer {
     .card p {
         max-width: 100%;
     }
+    
+    .overlay {
+  	position: absolute;
+    bottom: -40%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 90%;
+    height: 300px;
+    background: hsl(217, 28%, 15%);
+    padding: 30px 50px 50px 50px;
+    border-radius: 5px;
+    box-shadow: 0 3px 2px 0px hsl(217, 28%, 15%);
+    }
+    
     .overlay {
         bottom: -15%;
     }
