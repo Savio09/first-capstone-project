@@ -11,7 +11,7 @@ body {
     font-family: 'Raleway', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
     color: white;
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     background-color: hsl(218, 28%, 13%);
     display: grid;
@@ -113,6 +113,7 @@ section.intro .intro-div {
 
 /*Grid System*/
 section.grid {
+    height: 90vh;
     margin: 40px 0;
 }
 
@@ -228,7 +229,6 @@ section.comments {
 
 .card p {
     color: white;
-    max-width: 300px;
 }
 
 .card-1 {
@@ -332,21 +332,29 @@ footer {
 @media screen and (max-width: 768px) {
     .flex-left {
         width: 60%;
-        margin-right: 50px;
+        margin-right: 100px;
     }
+
+
     .comment-section {
-        height: max-content;
+        width: 80%;
+        height: 150vh;
         padding-bottom: 30px;
     }
+
     .comment-section .grid-items {
-        display: grid;
-        grid-template-columns: minmax(30rem, 1fr);
-        gap: 30px;
+        grid-template-columns: 1fr;
+    }
+
+    .card p {
+        max-width: 100%;
+    }
+    .overlay {
+        bottom: -15%;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .intro {
-    }
+    
 }
 
