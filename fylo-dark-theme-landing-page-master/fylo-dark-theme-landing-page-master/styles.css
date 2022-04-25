@@ -11,16 +11,17 @@ body {
     font-family: 'Raleway', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
     color: white;
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     background-color: hsl(218, 28%, 13%);
     display: grid;
     grid-template-columns: 1fr;
+    align-items: center;
     overflow-x: hidden;
 }
 
 section {
-    width: 100%;
+    width: 100vw;
 }
 
 section.intro {
@@ -166,7 +167,7 @@ section.productive {
 }
 
 .flex-right {
-    justify-self: end;
+    margin-left: 30px;
 }
 
 .flex-right h2 {
@@ -330,15 +331,24 @@ footer {
 
 
 @media screen and (max-width: 425px) {
+    .header .logo{
+        width: 50%;
+    }
+    .navigation ul{
+        width: 200px;
+        height: 100%;
+        align-items: center;
+    }
 
     section.grid {
         height: max-content;
-        margin: 40px 0;
+        margin: 100px 0;
     }    
 
     section.grid .grid-items {
         display: grid;
         grid-template-columns: 1fr;
+        gap: 5rem;
     }
 
     section.productive {
@@ -346,19 +356,27 @@ footer {
     }
 
     .flex-container {
-        height: 100vh;
-        width: 100%;
+        height: max-content;
+        width: 90%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0 20px;
-    }
-    .flex-left {
-        margin-bottom: 100px;
+        padding: 20px;
     }
 
-    .flex-right h2 {
+    .flex-left {
         width: 100%;
+        margin-bottom: 100px;
+        margin-left: 0!important;
+    }
+
+    
+    /*.flex-left {
+        margin-bottom: 100px;
+    }*/
+
+    .flex-right h2 {
+        max-width: 100%;
         color: white;
         font-size: 1.9rem;
         font-family: Raleway, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -366,7 +384,7 @@ footer {
     
     .flex-right p {
         color: white;
-        width: 100%;
+        max-width: 100%;
         margin-top: 20px;
         font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
@@ -392,11 +410,55 @@ footer {
 
 
 @media screen and (max-width: 768px) {
-    .flex-left {
-        width: 60%;
-        margin-right: 100px;
+
+    section.grid {
+        height: max-content;
+        margin: 100px 0;
+    }    
+
+    section.grid .grid-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5rem;
     }
 
+    section.productive {
+        height: max-content;
+    }
+
+    .flex-container {
+        height: max-content;
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .flex-left {
+        width: 100%;
+        margin-bottom: 100px;
+        margin-left: 0!important;
+    }
+
+    .flex-right {
+        width: 90%;
+        margin: auto;
+    }
+
+    .flex-right h2 {
+        max-width: 100%; 
+        color: white;
+        font-size: 1.9rem;
+        font-family: Raleway, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .flex-right p {
+        color: white;
+        max-width: 100%;
+        margin-top: 20px;
+        font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
     .comment-section {
         width: 80%;
