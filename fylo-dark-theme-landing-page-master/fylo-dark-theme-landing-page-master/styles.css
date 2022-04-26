@@ -393,6 +393,15 @@ footer .logo-container {
     display flex;
     align-items: center;
     justify-content: center;
+    width: 100%
+}
+
+.socials a {
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 425px) {
