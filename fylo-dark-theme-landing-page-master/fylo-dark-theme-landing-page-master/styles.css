@@ -583,7 +583,7 @@ footer .logo-container {
 
     .comment-section {
         width: 80%;
-        height: max-content;
+        height: 120vh;
         padding-bottom: 30px;
     }
 
