@@ -390,14 +390,14 @@ footer .logo-container {
 }
 
 .socials {
-    display flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%
+    width: 100%;
 }
 
 .socials a {
-    padding: 5px;
+    padding: 10px;
     border: 1px solid white;
     border-radius: 50%;
     color: white;
