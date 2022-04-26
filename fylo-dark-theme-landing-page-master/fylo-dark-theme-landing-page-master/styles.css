@@ -384,6 +384,7 @@ footer .logo-container {
 .links a {
     color: white;
     text-decoration: none;
+    line-height: 2rem;
 }
 
 
