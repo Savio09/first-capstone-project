@@ -1,4 +1,4 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:ital,wght@0,700;1,400&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:ital,wght@0,700;1,400&display=swap');
 
 * {
     margin: 0;
@@ -325,6 +325,8 @@ input:focus {
     outline: none;
 }
 
+/* Footer section*/
+
 footer {
     background: hsl(216, 53%, 9%);
     height: auto;
@@ -387,6 +389,11 @@ footer .logo-container {
     line-height: 2rem;
 }
 
+.socials {
+    display flex;
+    align-items: center;
+    justify-content: center;
+}
 
 @media screen and (max-width: 425px) {
     .header .logo{
