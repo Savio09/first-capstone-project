@@ -164,6 +164,7 @@ section.productive {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .flex-right {
@@ -326,7 +327,62 @@ input:focus {
 
 footer {
     background: hsl(216, 53%, 9%);
-    height: 70vh;
+    height: auto;
+    display: flex;
+}
+
+footer .grid-system {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+footer .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 5rem;
+}
+
+footer .logo-container {
+    margin: 20px 0;
+}
+
+.address {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20rem;
+}
+
+.address img {
+    margin-right: 20px;
+    align-self: flex-start;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact > div:first-child {
+    margin-bottom: 20px;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.links ul {
+    list-style: none;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -370,11 +426,6 @@ footer {
         margin-left: 0!important;
     }
 
-    
-    /*.flex-left {
-        margin-bottom: 100px;
-    }*/
-
     .flex-right h2 {
         max-width: 100%;
         color: white;
@@ -391,7 +442,7 @@ footer {
 
     .comment-section {
         width: 80%;
-        height: 150vh;
+        height: auto;
         padding-bottom: 30px;
     }
 
@@ -402,23 +453,60 @@ footer {
     .card p {
         max-width: 100%;
     }
-    
+
     .overlay {
-  	position: absolute;
-    bottom: -40%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    width: 90%;
-    height: 300px;
-    background: hsl(217, 28%, 15%);
-    padding: 30px 50px 50px 50px;
-    border-radius: 5px;
-    box-shadow: 0 3px 2px 0px hsl(217, 28%, 15%);
+        position: absolute;
+        top: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: auto;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    input[type='text'] {
+        width: 100%;
+        height: 40px;
+        border-radius: 30px;
+        padding: 15px;
+        border: 0;
+        margin-bottom: 30px;
     }
     
-    .overlay {
-        bottom: -15%;
+    input[type='submit'] {
+        width: 100%;
+        height: 40px;
+        border-radius: 30px;
+        border: 0;
+        background: linear-gradient(to left, hsl(176, 68%, 64%),hsl(198, 60%, 50%));
+        color: white;
+        font-family: Raleway;
+        cursor: pointer;
     }
+
+    footer .grid-system {
+        width: 80%;
+    }
+    
+    footer .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid .links {
+        grid-template-columns: 1fr;
+    }
+
+    
+    
 
 }
 
@@ -487,8 +575,57 @@ footer {
     .card p {
         max-width: 100%;
     }
+
     .overlay {
-        bottom: -15%;
+        position: absolute;
+        bottom: -25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: max-content;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    input[type='text'] {
+        width: 100%;
+        height: 40px;
+        border-radius: 30px;
+        padding: 15px;
+        border: 0;
+        margin-bottom: 10px;
+    }
+    
+    input[type='submit'] {
+        width: 100%;
+        height: 40px;
+        border-radius: 30px;
+        border: 0;
+        background: linear-gradient(to left, hsl(176, 68%, 64%),hsl(198, 60%, 50%));
+        color: white;
+        font-family: Raleway;
+        cursor: pointer;
+    }
+
+    footer .grid-system {
+        width: 80%;
+    }
+
+    footer .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid .links {
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
 }
 
