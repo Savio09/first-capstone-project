@@ -402,6 +402,7 @@ footer .logo-container {
     border-radius: 50%;
     color: white;
     text-decoration: none;
+    margin-right: 10px;
 }
 
 @media screen and (max-width: 425px) {
